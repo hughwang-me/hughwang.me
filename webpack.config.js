@@ -6,14 +6,15 @@ module.exports = {
     entry: './src/root.js',
     devtool: 'inline-source-map',
     output: {
-        filename: 'bundle-[hash].js',
+        filename: 'js/bundle-[name]-[chunkhash].js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
+                include: path.resolve(__dirname , 'src'),
+                exclude: path.resolve(__dirname , 'node_modules'),
                 loader: "babel-loader"
             },
             {

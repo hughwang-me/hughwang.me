@@ -1,3 +1,26 @@
 body {
-    background-color: red;
+}
+
+.pc_layout .header {
+    width: 100%;
+}
+
+.pc_layout .header .title {
+    font-size: 22px;
+    text-align: center;
+    color: whitesmoke;
+    width: 180px;
+    height: 64px;
+    line-height: 64px;
+    float: left;
+    margin-right: 100px;
+}
+
+.pc_layout .sider {
+}
+
+.pc_layout .content_layout {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
