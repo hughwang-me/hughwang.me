@@ -1,19 +1,19 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
-  "hexo": {
-    "version": "3.3.9"
+  "name": "hughwang.me",
+  "version": "1.0.0",
+  "description": "http://hughwang.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "hexo": "^3.2.0",
-    "hexo-generator-archive": "^0.1.4",
-    "hexo-generator-category": "^0.1.3",
-    "hexo-generator-index": "^0.2.0",
-    "hexo-generator-tag": "^0.2.0",
-    "hexo-renderer-ejs": "^0.3.0",
-    "hexo-renderer-stylus": "^0.3.1",
-    "hexo-renderer-marked": "^0.3.0",
-    "hexo-server": "^0.2.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hughwang-me/hughwang.me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hughwang-me/hughwang.me/issues"
+  },
+  "homepage": "https://github.com/hughwang-me/hughwang.me#readme"
 }
