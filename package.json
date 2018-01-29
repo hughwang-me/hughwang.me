@@ -19,11 +19,19 @@
   },
   "homepage": "https://github.com/hughwang-me/hughwang.me#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.6.3",
+    "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.9",
     "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.20.1",
     "webpack": "^3.10.0"
   },
   "dependencies": {
+    "antd": "^3.1.6",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }

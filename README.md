@@ -24,3 +24,33 @@ react 组件
 
 url : https://reactjs.org/docs/add-react-to-an-existing-app.html
 > npm install --save react react-dom
+
+##### 5) babel
+编译组件
+
+url : http://babeljs.io/docs/setup/#installation
+>npm install --save-dev babel-loader babel-core
+
+##### 6) babel react presets
+babel react presets
+
+url : http://babeljs.io/docs/plugins/preset-react/
+>npm install --save-dev babel-cli babel-preset-react
+
+##### 7) antd
+antd
+
+url : https://ant.design/docs/react/introduce-cn
+>npm install antd --save
+
+##### 8) antd babel-plugin-import
+antd 按需加载
+
+url : https://github.com/ant-design/babel-plugin-import
+>npm install babel-plugin-import --save-dev
+
+##### 9) style-loader css-loader
+css and style loader
+
+url : https://github.com/ant-design/babel-plugin-import
+>npm install babel-plugin-import --save-dev

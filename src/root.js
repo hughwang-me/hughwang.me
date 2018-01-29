@@ -1,5 +1,12 @@
-function say() {
-    console.log('say 1');
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-say();
+import PcIndex from './js/pc_index';
+
+ReactDOM.render(
+    <div>
+        index
+        <PcIndex/>
+    </div>,
+    document.getElementById('root')
+);
