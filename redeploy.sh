@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-exec sync.sh
+git pull origin master
 npm run build
