@@ -5,12 +5,16 @@ import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 const { SubMenu } = Menu;
 const { Header, Content, Sider, Footer } = Layout;
 
+import { Row, Col } from 'antd';
+import { Modal } from 'antd';
+
 class PcIndex extends React.Component {
 
     constructor(){
         super();
         this.state = {
-            collapsed: false
+            collapsed: false,
+            qrcodeVisible: false
         }
     }
 
@@ -21,33 +25,38 @@ class PcIndex extends React.Component {
         });
     }
 
+    wehcat(){
+        this.setState({
+            qrcodeVisible:true
+        })
+    }
+
+    wehcatClose(){
+        this.setState({
+            qrcodeVisible:false
+        })
+    }
+
     render(){
         return (
             <Layout className="pc_layout">
                 <Header
-                    className="header"
-                >
-                    <div className="title">
-                        PC
-                    </div>
-                    {/*<Menu*/}
-                        {/*theme="dark"*/}
-                        {/*mode="horizontal"*/}
-                        {/*defaultSelectedKeys={['1']}*/}
-                        {/*style={{ lineHeight: '64px' }}*/}
-                    {/*>*/}
-                        {/*<Menu.Item key="1">首 页</Menu.Item>*/}
-                        {/*<Menu.Item key="2">Github</Menu.Item>*/}
-                        {/*<Menu.Item key="3">关于作者</Menu.Item>*/}
-                    {/*</Menu>*/}
-                </Header>
+                    className="web_header"
 
+                >
+                    <Row>
+                        <Col span={2} className=''/>
+                        <Col span={18} className='web_title'>Hugh Wang</Col>
+                        <Col span={3} className=''> <a href='https://github.com/hughwang-me' target="_blank"><Icon type="github" /> Github</a>
+                            &nbsp;&nbsp; <a onClick={this.wehcat.bind(this)}><Icon type="wechat" /> 18501667737</a></Col>
+                        <Col span={1} className=''/>
+                    </Row>
+                </Header>
                 <Layout >
                     <Sider
                         className='sider'
                         trigger={null}
                         width={200}
-                        style={{ background: '#fff' }}
                         collapsible
                         collapsed={this.state.collapsed}
                         onCollapse={this.onCollapse.bind(this)}
@@ -55,20 +64,49 @@ class PcIndex extends React.Component {
                         <Menu
                             mode="inline"
                             defaultSelectedKeys={['1']}
-                            defaultOpenKeys={['sub1']}
+                            defaultOpenKeys={['']}
                             style={{ height: '100%', borderRight: 2 }}
                         >
-                            <Menu.Item key="1">
-                                <Icon type="pie-chart" />
-                                <span>Option 1</span>
-                            </Menu.Item>
-                            <Menu.Item key="2">
-                                <Icon type="desktop" />
-                                <span>Option 2</span>
-                            </Menu.Item>
                             <SubMenu
-                                key="sub1"
-                                title={<span><Icon type="user" /><span>User</span></span>}
+                                key="java"
+                                className='subMenuItem'
+                                title={<span><i class="iconfont">&#xe746;</i>&nbsp;&nbsp;<span className='subMenuItemTitle'>JAVA 基础</span></span>}
+                            >
+                                <Menu.Item key="3">Tom</Menu.Item>
+                                <Menu.Item key="4">Bill</Menu.Item>
+                                <Menu.Item key="5">Alex</Menu.Item>
+                            </SubMenu>
+                            <SubMenu
+                                key="react"
+                                className='subMenuItem'
+                                title={<span><i class="iconfont">&#xe64b;</i>&nbsp;&nbsp;<span className='subMenuItemTitle'>React</span></span>}
+                            >
+                                <Menu.Item key="3">Tom</Menu.Item>
+                                <Menu.Item key="4">Bill</Menu.Item>
+                                <Menu.Item key="5">Alex</Menu.Item>
+                            </SubMenu>
+                            <SubMenu
+                                key="ds"
+                                className='subMenuItem'
+                                title={<span><i class="iconfont">&#xe602;</i>&nbsp;&nbsp;<span className='subMenuItemTitle'>数据结构</span></span>}
+                            >
+                                <Menu.Item key="3">Tom</Menu.Item>
+                                <Menu.Item key="4">Bill</Menu.Item>
+                                <Menu.Item key="5">Alex</Menu.Item>
+                            </SubMenu>
+                            <SubMenu
+                                key="network"
+                                className='subMenuItem'
+                                title={<span><i class="iconfont">&#xe612;</i>&nbsp;&nbsp;<span className='subMenuItemTitle'>计算机网络</span></span>}
+                            >
+                                <Menu.Item key="3">Tom</Menu.Item>
+                                <Menu.Item key="4">Bill</Menu.Item>
+                                <Menu.Item key="5">Alex</Menu.Item>
+                            </SubMenu>
+                            <SubMenu
+                                key="os"
+                                className='subMenuItem'
+                                title={<span><i class="iconfont">&#xe607;</i>&nbsp;&nbsp;<span className='subMenuItemTitle'>操作系统</span></span>}
                             >
                                 <Menu.Item key="3">Tom</Menu.Item>
                                 <Menu.Item key="4">Bill</Menu.Item>
@@ -96,6 +134,17 @@ class PcIndex extends React.Component {
                     </Layout>
                     {/*<Sider>right sidebar</Sider>*/}
                 </Layout>
+
+                {/*二维码浮层*/}
+                <Modal
+                    title="微信二维码"
+                    visible={this.state.qrcodeVisible}
+                    footer={null}
+                    onCancel={this.wehcatClose.bind(this)}
+                    width={423}
+                >
+                    <img src='../src/img/wechat.jpg' alt="wechat"/>
+                </Modal>
 
             </Layout>
         )
