@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 
 import MediaQuery from 'react-responsive';
 
-require('./css/pc_base.css');
-require('./css/mob_base.css');
+require('./css/pc/style.css');
+require('./css/mob/style.css');
 
-import PcIndex from './js/pc_index';
-import MobIndex from './js/mob_index';
+import PcIndex from './js/pc/index';
+import MobIndex from './js/mob/index';
 
 ReactDOM.render(
     <div>
