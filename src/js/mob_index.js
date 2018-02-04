@@ -5,7 +5,7 @@ import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 const { SubMenu } = Menu;
 const { Header, Content, Sider, Footer } = Layout;
 
-class PcIndex extends React.Component {
+class MobIndex extends React.Component {
 
     constructor(){
         super();
@@ -103,4 +103,4 @@ class PcIndex extends React.Component {
 
 }
 
-export default PcIndex;
+export default MobIndex;
