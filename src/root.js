@@ -12,7 +12,7 @@ import MobIndex from './js/mob_index';
 ReactDOM.render(
     <div>
         <MediaQuery query='(min-device-width: 1224px)'>
-            <Index/>
+            <PcIndex/>
         </MediaQuery>
         <MediaQuery query='(max-device-width: 1224px)'>
             <MobIndex/>
