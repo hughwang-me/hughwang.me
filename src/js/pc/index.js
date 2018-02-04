@@ -143,7 +143,7 @@ class PcIndex extends React.Component {
                     onCancel={this.wehcatClose.bind(this)}
                     width={423}
                 >
-                    <img src='../src/img/wechat.jpg' alt="wechat"/>
+                    <img src='./img/wechat.jpg' alt="wechat"/>
                 </Modal>
 
             </Layout>
