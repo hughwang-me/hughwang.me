@@ -28,7 +28,7 @@ class MobIndex extends React.Component {
                     className="header"
                 >
                     <div className="title">
-                        手机端
+                        Mob
                     </div>
                     {/*<Menu*/}
                         {/*theme="dark"*/}

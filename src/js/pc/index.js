@@ -28,7 +28,7 @@ class PcIndex extends React.Component {
                     className="header"
                 >
                     <div className="title">
-                        王欢的博客
+                        PC
                     </div>
                     {/*<Menu*/}
                         {/*theme="dark"*/}
