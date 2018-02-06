@@ -123,8 +123,7 @@ class PcIndex extends React.Component {
                         <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
                             Content<br/><br/><br/><br/><br/><br/>
                             <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                            <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                            <br/><br/><br/>1
+                            <br/><br/>><br/>1
                             <br/><br/><br/><br/><br/><br/>
                             2
                             <br/><br/><br/><br/>
