@@ -120,14 +120,8 @@ class PcIndex extends React.Component {
                             <Breadcrumb.Item>List</Breadcrumb.Item>
                             <Breadcrumb.Item>App</Breadcrumb.Item>
                         </Breadcrumb>
-                        <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
-                            Content<br/><br/><br/><br/><br/><br/>
-                            <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                            <br/><br/>><br/>1
-                            <br/><br/><br/><br/><br/><br/>
-                            2
-                            <br/><br/><br/><br/>
-                            <br/><br/><br/>v
+                        <Content style={{ background: '#eee', padding: 0, margin: 0, minHeight: 0 }}>
+                            Content
                         </Content>
                         <Footer>Copyright 2018 © All Rights Reserved</Footer>
                     </Layout>
