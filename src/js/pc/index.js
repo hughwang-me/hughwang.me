@@ -123,7 +123,7 @@ class PcIndex extends React.Component {
                         <Content style={{ background: '#eee', padding: 0, margin: 0, minHeight: 0 }}>
                             Content
                         </Content>
-                        <Footer>Copyright 2018 © All Rights Reserved  <a href='www.miitbeian.gov.cn'>备案号：沪ICP备15039585号</a></Footer>
+                        <Footer>Copyright 2018 © All Rights Reserved  <a href='www.miitbeian.gov.cn' target='_blank'>备案号：沪ICP备15039585号</a></Footer>
                     </Layout>
                     {/*<Sider>right sidebar</Sider>*/}
                 </Layout>
